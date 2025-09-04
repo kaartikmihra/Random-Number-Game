@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <div class="h-[100vh] w-[100vw] bg-blue-500 flex justify-center">
+        <div class="h-150 w-200 border border-black m-20 bg-white rounded-t-xl">
+            <li class="flex border h-[5vh] justify-center grid grid-cols-3 gap-6 rounded-t-xl ">
+                <ul >TIME : <span id="time">0</span></ul>
+                <ul class="score">SCORE : <span id="score">0</span></ul>
+                <ul class="random ">RANDOM :<span class="hidden" id="randomNumber"></span></ul>
+            </li>
+                <input class="text border-2 flex justify-center m-2" id="text" placeholder="GUESS NUMBER 1to10.">
+                <button id="submit" class="button border-2 m-2 flex justify-center" >SUBMIT</button>
+        </div>
+    </div>
+    
+    <script src="guess.js"></script>
+</body>
+</html>
